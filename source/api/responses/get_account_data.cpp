@@ -35,8 +35,8 @@ GetAccountData::GetAccountData() : balance_(0) {
 }
 
 GetAccountData::GetAccountData(const std::vector<IOTA::Types::Trytes>& addresses,
-                               const std::vector<Models::Bundle>& transferBundle, long balance,
-                               long duration)
+                               const std::vector<Models::Bundle>& transferBundle, const int64_t& balance,
+                               const int64_t& duration)
     : Base(duration), addresses_(addresses), transferBundle_(transferBundle), balance_(balance) {
 }
 
@@ -70,13 +70,13 @@ GetAccountData::setTransfers(const std::vector<Models::Bundle>& transfers) {
   transferBundle_ = transfers;
 }
 
-long
+const int64_t&
 GetAccountData::getBalance() const {
   return balance_;
 }
 
 void
-GetAccountData::setBalance(long balance) {
+GetAccountData::setBalance(const int64_t& balance) {
   balance_ = balance;
 }
 

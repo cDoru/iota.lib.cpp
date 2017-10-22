@@ -31,7 +31,7 @@ namespace API {
 
 namespace Responses {
 
-ReplayBundle::ReplayBundle(const std::vector<bool>& successful, long duration)
+ReplayBundle::ReplayBundle(const std::vector<bool>& successful, const int64_t& duration)
     : Base(duration), successfully_(successful) {
 }
 

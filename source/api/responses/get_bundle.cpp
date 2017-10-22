@@ -31,7 +31,7 @@ namespace API {
 
 namespace Responses {
 
-GetBundle::GetBundle(const std::vector<Models::Transaction>& transactions, long duration)
+GetBundle::GetBundle(const std::vector<Models::Transaction>& transactions, const int64_t& duration)
     : Base(duration), transactions_(transactions) {
 }
 

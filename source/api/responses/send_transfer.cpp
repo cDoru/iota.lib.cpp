@@ -31,7 +31,7 @@ namespace API {
 
 namespace Responses {
 
-SendTransfer::SendTransfer(const std::vector<bool>& successful, long duration)
+SendTransfer::SendTransfer(const std::vector<bool>& successful, const int64_t& duration)
     : Base(duration), successfully_(successful) {
 }
 

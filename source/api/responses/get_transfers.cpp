@@ -31,7 +31,7 @@ namespace API {
 
 namespace Responses {
 
-GetTransfers::GetTransfers(const std::vector<Models::Bundle>& transferBundle, long duration)
+GetTransfers::GetTransfers(const std::vector<Models::Bundle>& transferBundle, const int64_t& duration)
     : Base(duration), transferBundle_(transferBundle) {
 }
 
