@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -56,25 +56,25 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-    <PropertyGroup>
-      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Simon\Documents\iota.lib.cpp\msvc15\lib\Debug\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">iota.dir\Debug\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">iota</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Simon\Documents\iota.lib.cpp\msvc15\lib\Release\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">iota.dir\Release\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">iota</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Simon\Documents\iota.lib.cpp\msvc15\lib\MinSizeRel\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">iota.dir\MinSizeRel\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">iota</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Simon\Documents\iota.lib.cpp\msvc15\lib\RelWithDebInfo\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">iota.dir\RelWithDebInfo\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">iota</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
-    </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Simon\Documents\iota.lib.cpp\msvc15\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">iota.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">iota</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Simon\Documents\iota.lib.cpp\msvc15\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">iota.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">iota</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\Simon\Documents\iota.lib.cpp\msvc15\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">iota.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">iota</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\Simon\Documents\iota.lib.cpp\msvc15\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">iota.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">iota</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
@@ -123,7 +123,8 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -156,7 +157,8 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;WIN32_LEAN_AND_MEAN;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -264,113 +266,110 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\core.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\extended.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\add_neighbors.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\core.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\extended.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\add_neighbors.cpp">
       <ObjectFileName>$(IntDir)/source/api/requests/add_neighbors.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\attach_to_tangle.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\attach_to_tangle.cpp">
       <ObjectFileName>$(IntDir)/source/api/requests/attach_to_tangle.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\base.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\base.cpp">
       <ObjectFileName>$(IntDir)/source/api/requests/base.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\broadcast_transactions.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\find_transactions.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\broadcast_transactions.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\find_transactions.cpp">
       <ObjectFileName>$(IntDir)/source/api/requests/find_transactions.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_balances.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_balances.cpp">
       <ObjectFileName>$(IntDir)/source/api/requests/get_balances.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_inclusions_states.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_neighbors.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_inclusions_states.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_neighbors.cpp">
       <ObjectFileName>$(IntDir)/source/api/requests/get_neighbors.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_node_info.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_node_info.cpp">
       <ObjectFileName>$(IntDir)/source/api/requests/get_node_info.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_tips.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_tips.cpp">
       <ObjectFileName>$(IntDir)/source/api/requests/get_tips.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_transactions_to_approve.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_transactions_to_approve.cpp">
       <ObjectFileName>$(IntDir)/source/api/requests/get_transactions_to_approve.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_trytes.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\get_trytes.cpp">
       <ObjectFileName>$(IntDir)/source/api/requests/get_trytes.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\interrupt_attaching_to_tangle.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\remove_neighbors.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\interrupt_attaching_to_tangle.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\remove_neighbors.cpp">
       <ObjectFileName>$(IntDir)/source/api/requests/remove_neighbors.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\store_transactions.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\add_neighbors.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\requests\store_transactions.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\add_neighbors.cpp">
       <ObjectFileName>$(IntDir)/source/api/responses/add_neighbors.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\attach_to_tangle.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\attach_to_tangle.cpp">
       <ObjectFileName>$(IntDir)/source/api/responses/attach_to_tangle.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\base.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\base.cpp">
       <ObjectFileName>$(IntDir)/source/api/responses/base.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\find_transactions.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\find_transactions.cpp">
       <ObjectFileName>$(IntDir)/source/api/responses/find_transactions.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_account_data.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_balances.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_account_data.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_balances.cpp">
       <ObjectFileName>$(IntDir)/source/api/responses/get_balances.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_balances_and_format.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_bundle.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_inclusion_states.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_neighbors.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_balances_and_format.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_bundle.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_inclusion_states.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_neighbors.cpp">
       <ObjectFileName>$(IntDir)/source/api/responses/get_neighbors.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_new_addresses.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_node_info.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_new_addresses.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_node_info.cpp">
       <ObjectFileName>$(IntDir)/source/api/responses/get_node_info.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_tips.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_tips.cpp">
       <ObjectFileName>$(IntDir)/source/api/responses/get_tips.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_transactions_to_approve.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_transactions_to_approve.cpp">
       <ObjectFileName>$(IntDir)/source/api/responses/get_transactions_to_approve.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_transfers.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_trytes.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_transfers.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\get_trytes.cpp">
       <ObjectFileName>$(IntDir)/source/api/responses/get_trytes.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\remove_neighbors.cpp" >
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\remove_neighbors.cpp">
       <ObjectFileName>$(IntDir)/source/api/responses/remove_neighbors.cpp.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\replay_bundle.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\send_transfer.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\service.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\crypto\checksum.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\crypto\curl.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\crypto\keccak384.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\crypto\kerl.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\crypto\signing.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\crypto\sponge_factory.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\models\bundle.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\models\input.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\models\neighbor.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\models\signature.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\models\transaction.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\models\transfer.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\types\big_int.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\types\trinary.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\types\utils.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\utils\random_seed_generator.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\utils\stop_watch.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\external\keccak\source\KeccakHash.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\external\keccak\source\KeccakP-1600-reference.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\external\keccak\source\KeccakSpongeWidth1600.cpp"  />
-    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\external\keccak\source\SimpleFIPS202.cpp"  />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\replay_bundle.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\responses\send_transfer.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\api\service.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\crypto\checksum.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\crypto\curl.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\crypto\keccak384.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\crypto\kerl.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\crypto\signing.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\crypto\sponge_factory.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\models\bundle.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\models\input.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\models\neighbor.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\models\signature.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\models\transaction.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\models\transfer.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\types\big_int.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\types\trinary.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\types\utils.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\utils\random_seed_generator.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\source\utils\stop_watch.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\external\keccak\source\KeccakHash.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\external\keccak\source\KeccakP-1600-reference.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\external\keccak\source\KeccakSpongeWidth1600.cpp" />
+    <ClCompile Include="C:\Users\Simon\Documents\iota.lib.cpp\external\keccak\source\SimpleFIPS202.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/Simon/Documents/iota.lib.cpp/msvc15/ZERO_CHECK.vcxproj">
-      <Project>B6A184D8-6E49-3DC5-941C-6130923E25A1</Project>
-    </ProjectReference>
     <ProjectReference Include="C:/Users/Simon/Documents/iota.lib.cpp/msvc15/boost_dep.vcxproj">
       <Project>BA54A7B1-5BC7-34A2-9AC5-7E6079F90534</Project>
     </ProjectReference>
